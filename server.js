@@ -12,23 +12,23 @@ app.use(express.json());
 
 // Routes (Pages)
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "home.html"));
+  res.sendFile(path.join(__dirname, "home.html"));
 });
 
 app.get("/about", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "about.html"));
+  res.sendFile(path.join(__dirname, "about.html"));
 });
 
 app.get("/skills", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "skills.html"));
+  res.sendFile(path.join(__dirname, "skills.html"));
 });
 
 app.get("/projects", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "projects.html"));
+  res.sendFile(path.join(__dirname, "projects.html"));
 });
 
 app.get("/contact", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "contact.html"));
+  res.sendFile(path.join(__dirname, "contact.html"));
 });
 
 /* ================= CONTACT BACKEND ================= */
@@ -84,5 +84,6 @@ app.post("/send-message", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
+
 
 
